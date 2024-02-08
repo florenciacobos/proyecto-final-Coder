@@ -1,0 +1,12 @@
+/*mixin*/
+
+@mixin anclas{
+    text-decoration:none;
+    color: $color-principal;
+    font-family: cursive;
+}
+
+@mixin collapse { 
+    background-color: $color-secundario;
+    border: $color-principal solid 3px;
+}

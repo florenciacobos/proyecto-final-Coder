@@ -1,0 +1,380 @@
+//index
+.titulos {
+  color: $color-principal;
+  font-family: cursive;
+  
+}
+
+.imgCentral {
+  border-radius: 20px;
+  margin: 20px 0;
+
+}
+
+.carruselNovedades {
+  width: 500px;
+  height: auto;
+  margin: 20px auto;
+  padding: 10px;
+}
+
+//productos!!!
+h1 {
+  text-align: center;
+  margin: 20px 0px;
+  font-family: cursive;
+  color: $color-principal;
+}
+
+.productos {
+  background-color: $color-secundario;
+  border: $color-principal solid 3px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-family: cursive;
+  padding: 5px;
+  margin: 5px;
+  color: $color-fondo;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.contenedorProductos {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  
+}
+
+//MODAL
+.productos h2 {
+  font-size: 3rem;
+}
+
+.btnModal {
+  background: $color-secundario;
+  color: $color-principal;
+  border: $color-fondo;
+  border-radius: 10PX;
+  width: 100px;
+  height: 40px;
+  margin: 20px;
+  padding: 10px;
+  text-transform: uppercase;
+
+  &:hover {
+      background: $color-principal;
+      color: $color-fondo;
+  }
+}
+
+.textoCarrito {
+  font-size: bold;
+  font-family: cursive;
+  color: $color-principal;
+  text-align: center;
+}
+
+.botonCarrito {
+  width: 400px;
+  text-transform: uppercase;
+}
+
+
+.btnAceptarCancelar {
+  width: 150px;
+  text-transform: uppercase;
+  font-size: bold;
+  font-family: cursive;
+}
+
+// CARDS
+
+.contenedorProducto {
+  background-color: #f8ccd9;
+  border: $color-secundario solid 3px;
+  border-radius: 20px;
+  margin: 10px;
+  font-family: cursive;
+  color: $color-principal;
+  text-align: center;
+  width: 300px;
+  height: 650px;
+}
+
+.imgProduc {
+  border: $color-secundario solid 3px;
+  border-radius: 20px;
+  width: 250px;
+  height: 550px;
+  margin: 10px auto;
+  display: flex;
+  object-fit: cover;
+}
+
+.nombreProduc {
+  text-transform: uppercase;
+  font-size: bold;
+}
+
+
+.logoWhats {
+  width: 120px;
+  right: 15px;
+  position: fixed;
+  bottom: 18px;
+}
+
+//PAGINACION
+
+.page-link {
+  color: $color-principal;
+  background-color: $color-fondo-prod;
+  border: $color-principal solid 2px;
+
+  &:hover {
+    background: $color-principal;
+    color: $color-fondo-prod;
+  }
+}
+
+//CONSEJOS
+
+.titConsejo {
+  font-size: 20px;
+  padding-bottom: 7px;
+  color: $color-principal;
+  font-family: cursive;
+  background-color: $color-secundario;
+  border: $color-principal solid 3px;
+  border-radius: 20px;
+  width: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.imgConsejo{
+  border: solid 3px $color-principal;
+  border-radius: 20px;
+  width: 200;
+  height: 300px;
+  display: inline
+}
+
+//COLLAPSE
+
+contenedorCollapse{
+  display: flex;
+  justify-content: center;
+}
+
+.collapse1, .collapse2, .collapse3 {
+  background-color: $color-secundario;
+  border: $color-principal solid 3px;
+}
+
+.btnConsejo {
+  width: 250px;
+  border: $color-principal solid 3px;
+  border-radius: 20px;
+  background-color: $color-secundario;
+  color: $color-principal;
+  padding: 10px;
+
+  &:hover {
+    border: $color-secundario solid 3px;
+  }
+}
+
+
+.textoCollapse {
+  width: 250px;
+  border: $color-principal solid 3px;
+  color: $color-principal;
+  background-color: $color-fondo-prod;
+}
+
+//PREGUNTAS FRECUENTES
+
+.preg {
+  background-color: $color-secundario;
+  border: $color-principal solid 3px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-family: cursive;
+  padding: 5px;
+  margin: 20px;
+  color: $color-fondo;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.imgPreg {
+  max-width: 100%;
+  height: auto;
+  border: $color-principal solid 3px;
+  border-radius: 20px;
+}
+
+//ACORDEON
+
+.contenedorAcordion {
+  width: auto;
+}
+
+.acordionPreg {
+  background-color: $color-secundario;
+  color: $color-principal;
+}
+
+.acordionTexto {
+  background-color: $color-secundario;
+  color: $color-fondo;
+}
+
+//NOSOTROS
+.nosotros {
+  background-color: $color-secundario;
+  border: $color-principal solid 3px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-family: cursive;
+  padding: 5px;
+  margin: 20px;
+  color: $color-fondo;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+//COLUMNS
+.btnNos1{
+  width: 250px;
+  color: $color-principal;
+  background-color: $color-fondo-prod;
+  border-radius: 20px;
+  border: $color-principal solid 3px;
+  padding: 5px;
+}
+
+.btnNos {
+  width: 200px;
+  color: $color-principal;
+  background-color: $color-secundario;
+  border-radius: 20px;
+  border: $color-principal solid 3px;
+  padding: 5px;
+
+  &:hover {
+    color:  $color-secundario;
+    background-color: $color-principal;
+    border: $color-secundario solid 3px;
+  }
+}
+
+.btnTexto {
+  background-color: $color-fondo-prod;
+  border: solid 3px $color-principal;
+  color: $color-principal;
+  font-family: cursive;
+}
+
+.fotoNosotros {
+  border: $color-principal solid 3px;
+  border-radius: 20px;
+}
+
+//CONTACTOS
+.contenedorContacto{
+  display: flex;
+  justify-content: center;
+  border: 3px $color-principal solid;
+  border-radius: 20px;
+}
+
+
+.tituloContacto {
+  width: auto;
+  color: $color-fondo;
+  background-color: $color-secundario;
+  border: $color-principal solid 3px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  // margin: 10px 10px;
+  // padding: 10px 10px;
+  font-family: cursive;
+}
+
+//FORMS
+.descripcionContacto {
+  width: auto;
+  color: $color-fondo;
+  background-color: $color-secundario;
+  border: $color-principal solid 3px;
+  border-radius: 20px;
+  margin: auto;
+  padding: 10px 10px;
+  font-family: cursive;
+}
+
+.llenarInfo {
+  // width: auto;
+  color: $color-fondo-prod;
+  background-color: $color-secundario;
+  border: $color-principal solid 3px;
+  margin: 5px;
+
+  &:hover {
+    background-color: $color-principal;
+    border: $color-fondo-prod solid 3px;
+    color: $color-fondo-prod;
+  }
+}
+
+.contenedorBotones{
+  width: 500px;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
+.btnEnviar, .btnRestablecer {
+  width: 150px;
+  color: $color-fondo;
+  background-color: $color-secundario;
+  border: $color-principal solid 3px;
+  border-radius: 20px;
+  // margin: auto;
+  // padding: auto;
+  font-family: cursive;
+  
+  &:hover {
+    background-color: $color-principal;
+    border: $color-principal solid 3px;
+  }
+}
+
+
+.fotoContacto {
+// width: 100%;
+// height: auto;
+border: $color-principal 3px solid;
+display: flex;
+justify-content: center;
+border-radius: 20px;
+position: relative;
+}
+
+.textA {
+  background-color: $color-secundario;
+  border: $color-principal solid 3px;
+  // margin: 5px;
+  font-family: cursive;
+
+  &:hover {
+    background-color: $color-principal;
+    border: $color-fondo-prod solid 3px;
+    color: $color-fondo-prod;
+  }
+}

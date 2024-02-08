@@ -1,0 +1,48 @@
+.text-center{
+  margin: 0 auto;
+}
+
+a{
+  @include anclas;  //mixin
+
+}
+
+  hr {
+    border: $color-principal solid 3px;
+  }
+  
+  .test {
+    color: $color-principal;
+  }
+  
+  .tituloFooter {
+    width: 200px;
+    background-color: $color-secundario;
+    border: $color-principal solid 3px;
+    border-radius: 20px;
+    color: $color-fondo;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+
+  .contenedorF{
+    display: flex;
+    justify-content: center;
+  }
+  
+  .contenedorFooter {
+    width: 200px;
+  }
+  
+  .parrafoFooter {
+    font-family: cursive;
+    color: $color-principal;
+    font-size: 15px;
+    display: flex;
+    
+  }
+  
+  .iconoContacto {
+    margin-right: 5px;
+  }

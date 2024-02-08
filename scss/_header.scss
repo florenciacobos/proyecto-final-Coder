@@ -1,0 +1,67 @@
+/*HEADER*/
+
+.imgLogo {
+    width: 140px;
+    height: 140px;
+    border: $color-principal solid 3px;
+    border-radius: 20px;
+    margin: 10px 20px;
+}
+
+.encabezado {
+    font-family: cursive;
+    font-size:16px;
+    background-color: $color-fondo;
+    border-bottom: 20px solid $color-secundario;
+    border-top: 20px solid $color-secundario;
+    height: auto;
+}
+
+.container-fluid {
+    justify-content: space-evenly;
+ }
+
+.contenedorBusqueda {
+    display: flex;
+    align-items: center;
+}
+
+.busqueda {
+    background: $color-secundario;
+    color: $color-principal;
+    border-radius: 20px;
+    width: auto;
+    height: 30px;
+    padding: 20px;
+   
+}
+
+.btnBuscar{
+    background-color:  $color-secundario;
+    color: $color-principal;
+    border-radius: 20px;
+    border: 3px solid $color-principal;
+    width: auto;
+    height: 30px;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    line-height: 10px;
+
+    &:hover {
+        background-color: $color-principal;
+        color: $color-secundario;
+        border: $color-secundario solid 3px;
+        color: $color-secundario;
+      }
+
+}
+
+
+.nav-link {
+    color: $color-principal;
+
+    &:hover {
+        color: $color-secundario;
+    }
+}
