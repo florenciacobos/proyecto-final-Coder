@@ -71,9 +71,11 @@
                     aria-label="Search">
 
                 <input class="btnBuscar  text-fluid btn-primary" type="button" value="BUSCAR">
-
-
+                                     
             </nav>
+            <div>
+                <button type="button"> <i class="btnCarrito bi bi-bag-heart btn btn-light container-fluid"></i></button>
+            </div>
         </div>
     </header>
 
@@ -82,6 +84,15 @@
         <div data-aos="zoom-in" class="productos">
             <h1 data-aos="zoom-in">Productos</h1>
         </div>
+
+
+        <!--agragado de js-->
+        <div id="productos">
+
+        </div>
+
+
+
 
         <!-- Modal -->
         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -109,14 +120,17 @@
         </div>
 
         <!-- CARDS -->
-        <div class="container-fluid contenedorProductos">
 
+        <!--js agregue id productos-->
+
+        <div id="productos" class="container-fluid contenedorProductos">
             <div data-aos="fade-up" class="card col-xl-4 col-md-6 col-sm-12 contenedorProducto">
                 <img src="../img/art-11.png" class="card-img-top img-fluid imgProduc" alt="Art.11-conjunto deportivo">
                 <div class="card-body">
                     <h3 class="card-title nombreProduc">Conjunto deportivo</h3>
-                    <p class="card-text">Conjunto de microfibra, con corpiño regulador y colaless tiro alto.</p>
+                    <p class="card-text">De microfibra, con corpiño regulador y colaless tiro alto.</p>
                     <h4 class="card-precio">$7000 </h4>
+                    <h5>Stock: 5</h5>
                     <button type="button" class="animate__animated animate__bounce btnModal" data-bs-toggle="modal"
                         data-bs-target="#exampleModal">
                         Añadir
@@ -127,9 +141,10 @@
             <div data-aos="fade-up" class="card col-xl-4 col-md-6 col-sm-12 contenedorProducto">
                 <img src="../img/art-12.png" class="card-img-top img-fluid imgProduc" alt="Art.12- conjunto bralette">
                 <div class="card-body">
-                    <h3 class="card-title nombreProduc">Conjunto Bralette</h3>
-                    <p class="card-text">Conjunto de encaje, con corpiño regulador y tanga regulable.</p>
+                    <h3 class="card-title nombreProduc">Conjunto Bra</h3>
+                    <p class="card-text">De encaje, con corpiño y tanga regulable.</p>
                     <h4 class="card-precio">$8000 </h4>
+                    <h5>Stock: 10</h5>
                     <button type="button" class="animate__animated animate__bounce btnModal" data-bs-toggle="modal"
                         data-bs-target="#exampleModal">
                         Añadir
@@ -141,8 +156,9 @@
                 <img src="../img/art-13.png" class="card-img-top img-fluid imgProduc" alt="Art.13- Conjunto armado">
                 <div class="card-body">
                     <h3 class="card-title nombreProduc">Conjunto Push</h3>
-                    <p class="card-text">Conjunto con push up y arco con tanga.</p>
+                    <p class="card-text">De push up y arco con tanga.</p>
                     <h4 class="card-precio">$7500 </h4>
+                    <h5>Stock: 5</h5>
                     <button type="button" class="animate__animated animate__bounce btnModal" data-bs-toggle="modal"
                         data-bs-target="#exampleModal">
                         Añadir
@@ -154,9 +170,10 @@
                 <img src="../img/art-14.png" class="card-img-top img-fluid imgProduc"
                     alt="Art.14-conjunto bralette y tul">
                 <div class="card-body">
-                    <h3 class="card-title nombreProduc">Conjunto Bralette y tul</h3>
-                    <p class="card-text">Conjunto sin relleno con corpiño y tanga regulables.</p>
+                    <h3 class="card-title nombreProduc">Conjunto tul</h3>
+                    <p class="card-text">Sin relleno con corpiño y tanga regulables.</p>
                     <h4 class="card-precio">$7000 </h4>
+                    <h5>Stock: 15</h5>
                     <button type="button" class="animate__animated animate__bounce btnModal" data-bs-toggle="modal"
                         data-bs-target="#exampleModal">
                         Añadir
@@ -168,9 +185,10 @@
                 <img src="../img/art-15.png" class="card-img-top img-fluid imgProduc"
                     alt="Art.15- conjunto deportivo 2">
                 <div class="card-body">
-                    <h3 class="card-title nombreProduc">Conjunto deportivo</h3>
-                    <p class="card-text">Conjunto de microfibra,sin relleno con colales alta.</p>
+                    <h3 class="card-title nombreProduc">Conjunto depo</h3>
+                    <p class="card-text">De microfibra,sin relleno con colales alta.</p>
                     <h4 class="card-precio">$7500 </h4>
+                    <h5>Stock: 5</h5>
                     <button type="button" class="animate__animated animate__bounce btnModal" data-bs-toggle="modal"
                         data-bs-target="#exampleModal">
                         Añadir
@@ -182,8 +200,9 @@
                 <img src="../img/art-16.png" class="card-img-top img-fluid imgProduc" alt="Art.16-conjunto clasico">
                 <div class="card-body">
                     <h3 class="card-title nombreProduc">Conjunto basico</h3>
-                    <p class="card-text">Conjunto de encaje con corpiño y tanga regulable.</p>
+                    <p class="card-text">De encaje con corpiño y tanga regulable.</p>
                     <h4 class="card-precio">$7000 </h4>
+                    <h5>Stock: 10</h5>
                     <button type="button" class="animate__animated animate__bounce btnModal" data-bs-toggle="modal"
                         data-bs-target="#exampleModal">
                         Añadir
@@ -195,9 +214,10 @@
                 <img src="../img/art-17.png" class="card-img-top img-fluid imgProduc" alt="Art.17- conjunto sexy">
                 <div class="card-body">
                     <h3 class="card-title nombreProduc">Conjunto sexy</h3>
-                    <p class="card-text">Conjunto de encaje con corpiño y tanga regulable + arnes cuerpo completo
+                    <p class="card-text">De encaje con tanga regulable + arnes completo
                         elastizable.</p>
                     <h4 class="card-precio">$9000 </h4>
+                    <h5>Stock: 5</h5>
                     <button type="button" class="animate__animated animate__bounce btnModal" data-bs-toggle="modal"
                         data-bs-target="#exampleModal">
                         Añadir
@@ -209,8 +229,9 @@
                 <img src="../img/art-18.png" class="card-img-top img-fluid imgProduc" alt="Art.18- conjunto armado 2">
                 <div class="card-body">
                     <h3 class="card-title nombreProduc">Conjunto up</h3>
-                    <p class="card-text">Conjunto con push up y arco de encaje,con tanga regulable.</p>
+                    <p class="card-text">Con push up y arco de encaje y tanga regulable.</p>
                     <h4 class="card-precio">$8000 </h4>
+                    <h5>Stock: 15</h5>
                     <button type="button" class="animate__animated animate__bounce btnModal" data-bs-toggle="modal"
                         data-bs-target="#exampleModal">
                         Añadir
