@@ -27,13 +27,13 @@ function renderizarProductos(){
   contenedor.innerHTML =""; //limpiar el contenedor
 
   for(const producto of productos){
-    contenido += '<div class="col -md-4 text-center">
-    <a href="producto.html" onclick= "verProducto(${pr"
+    contenido += `<div class="col -md-4 text-center">
+    <a href="producto.html" onclick= "verProducto(${producto}"`
 
 
     console.log(producto);
 
-    const div=document.createElement("div");
+    const div=document.createElement("div")
 
 // Evento para agregar al carrito al hacer clic en un botón
       div.addEventListener('click', () => {
