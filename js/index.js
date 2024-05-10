@@ -16,19 +16,21 @@ function reservarProducto(producto){
     
   }
 
-
-
-
-
   console.log(producto); //ver si recibimos eso
 }
 
 
-function renderizarProductos(productos){
+function renderizarProductos(){
+  const productos= obtenerProductoLS();
+  let contenido= "";
 
   contenedor.innerHTML =""; //limpiar el contenedor
 
   for(const producto of productos){
+    contenido += '<div class="col -md-4 text-center">
+    <a href="producto.html" onclick= "verProducto(${pr"
+
+
     console.log(producto);
 
     const div=document.createElement("div");
@@ -80,6 +82,56 @@ const productos= [
     new Producto("Conjunto Sexy",9000,5),
     new Producto("Conjunto Up",8000,15),
 ];
+
+const guardarProductoLS= (producto)=>{
+  localStorage.setItem("productos", JSON.stringify(productos));
+
+}
+const obtenerProductosLS= ()=>{
+  return JSON.parse(localStorage.getItem("productos")) || [];
+
+}
+
+const guardarCarritoLS= (productos)=>{
+  localStorage.setItem("carrito", JSON.stringify(productos));
+}
+
+const obtenerCarritoLS= ()=>{
+  return JSON.parse(localStorage.getItem("carrito")) || [];
+}
+
+const obtenerIdProductoLS= ()=>{
+  return JSON.parse(localStorage.getItem("carrito")) || 0;
+
+}
+
+const cantTotalProductos=()=>{
+  const carrito = obtenerCarritoLS();
+
+  return carrito.lenght;
+}
+
+const renderTotalcarrito= ()=>{
+  document.getElementById("totalcarrito").innerHTML= cantTotalProductos();
+}
+
+const verProducto = (id) =>{
+  localStorage.setItem("producto", JSON.stringify(id));
+
+}
+
+const obtenerProductoLS =()=>{
+  const productos = obtenerProductoLS();
+  const id = obtenerIdProductoLS();
+  const producto = productos.find(item =>item.id ===id);
+
+  return producto;
+}
+
+guardarProductosLS(productos);
+
+
+
 
 const productosReservados = []; //array vacio
 
