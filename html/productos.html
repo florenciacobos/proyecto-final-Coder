@@ -71,7 +71,7 @@
                     aria-label="Search">
 
                 <input class="btnBuscar  text-fluid btn-primary" type="button" value="BUSCAR">
-                                     
+
             </nav>
             <div>
                 <i class="btnCarrito bi bi-bag-heart btn btn-light container-fluid"></i>
@@ -81,18 +81,14 @@
 
     <!-- productos -->
     <main>
+        <!--js-->
+
+
+
+
         <div data-aos="zoom-in" class="productos">
             <h1 data-aos="zoom-in">Productos</h1>
         </div>
-
-
-        <!--agragado de js-->
-        <div id="productos">
-
-        </div>
-
-
-
 
         <!-- Modal -->
         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -119,156 +115,166 @@
             </div>
         </div>
 
-        <!-- CARDS -->
+        <div id="contenedor">
 
-        <!--js agregue id productos-->
+            <!-- CARDS -->
 
-        <div id="productos" class="container-fluid contenedorProductos">
-            <div data-aos="fade-up" class="card col-xl-4 col-md-6 col-sm-12 contenedorProducto">
-                <img src="../img/art-11.png" class="card-img-top img-fluid imgProduc" alt="Art.11-conjunto deportivo">
-                <div class="card-body">
-                    <h3 class="card-title nombreProduc">Conjunto deportivo</h3>
-                    <p class="card-text">De microfibra, con corpiño regulador y colaless tiro alto.</p>
-                    <h4 class="card-precio">$7000 </h4>
-                    <h5>Stock: 5</h5>
-                    <button type="button" class="animate__animated animate__bounce btnModal" data-bs-toggle="modal"
-                        data-bs-target="#exampleModal">
-                        Añadir
-                    </button>
+            <!--js agregue id productos-->
+            <input type="text" id="nombreProducto"/>
+            <div id="productos" class="container-fluid contenedorProductos">
+                <div id="contenedorProducto">
+
                 </div>
+
+                <!-- <div data-aos="fade-up" class="card col-xl-4 col-md-6 col-sm-12 contenedorProducto">
+                    <img src="../img/art-11.png" class="card-img-top img-fluid imgProduc"
+                        alt="Art.11-conjunto deportivo">
+                    <div class="card-body">
+                        <h3 class="card-title nombreProduc">Conjunto deportivo</h3>
+                        <p class="card-text">De microfibra, con corpiño regulador y colaless tiro alto.</p>
+                        <h4 class="card-precio">$7000 </h4>
+                        <h5>Stock: 5</h5>
+                        <button type="button" class="animate__animated animate__bounce btnModal" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            Añadir
+                        </button>
+                    </div>
+                </div>
+
+                <div data-aos="fade-up" class="card col-xl-4 col-md-6 col-sm-12 contenedorProducto">
+                    <img src="../img/art-12.png" class="card-img-top img-fluid imgProduc"
+                        alt="Art.12- conjunto bralette">
+                    <div class="card-body">
+                        <h3 class="card-title nombreProduc">Conjunto Bra</h3>
+                        <p class="card-text">De encaje, con corpiño y tanga regulable.</p>
+                        <h4 class="card-precio">$8000 </h4>
+                        <h5>Stock: 10</h5>
+                        <button type="button" class="animate__animated animate__bounce btnModal" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            Añadir
+                        </button>
+                    </div>
+                </div>
+
+                <div data-aos="fade-up" class="card col-xl-4 col-md-6 col-sm-12 contenedorProducto">
+                    <img src="../img/art-13.png" class="card-img-top img-fluid imgProduc" alt="Art.13- Conjunto armado">
+                    <div class="card-body">
+                        <h3 class="card-title nombreProduc">Conjunto Push</h3>
+                        <p class="card-text">De push up y arco con tanga.</p>
+                        <h4 class="card-precio">$7500 </h4>
+                        <h5>Stock: 5</h5>
+                        <button type="button" class="animate__animated animate__bounce btnModal" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            Añadir
+                        </button>
+                    </div>
+                </div>
+
+                <div data-aos="fade-up" class="card col-xl-4 col-md-6 col-sm-12 contenedorProducto">
+                    <img src="../img/art-14.png" class="card-img-top img-fluid imgProduc"
+                        alt="Art.14-conjunto bralette y tul">
+                    <div class="card-body">
+                        <h3 class="card-title nombreProduc">Conjunto tul</h3>
+                        <p class="card-text">Sin relleno con corpiño y tanga regulables.</p>
+                        <h4 class="card-precio">$7000 </h4>
+                        <h5>Stock: 15</h5>
+                        <button type="button" class="animate__animated animate__bounce btnModal" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            Añadir
+                        </button>
+                    </div>
+                </div>
+
+                <div data-aos="fade-up" class="card col-xl-4 col-md-6 col-sm-12 contenedorProducto">
+                    <img src="../img/art-15.png" class="card-img-top img-fluid imgProduc"
+                        alt="Art.15- conjunto deportivo 2">
+                    <div class="card-body">
+                        <h3 class="card-title nombreProduc">Conjunto depo</h3>
+                        <p class="card-text">De microfibra,sin relleno con colales alta.</p>
+                        <h4 class="card-precio">$7500 </h4>
+                        <h5>Stock: 5</h5>
+                        <button type="button" class="animate__animated animate__bounce btnModal" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            Añadir
+                        </button>
+                    </div>
+                </div>
+
+                <div data-aos="fade-up" class="card col-xl-4 col-md-6 col-sm-12 contenedorProducto">
+                    <img src="../img/art-16.png" class="card-img-top img-fluid imgProduc" alt="Art.16-conjunto clasico">
+                    <div class="card-body">
+                        <h3 class="card-title nombreProduc">Conjunto basico</h3>
+                        <p class="card-text">De encaje con corpiño y tanga regulable.</p>
+                        <h4 class="card-precio">$7000 </h4>
+                        <h5>Stock: 10</h5>
+                        <button type="button" class="animate__animated animate__bounce btnModal" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            Añadir
+                        </button>
+                    </div>
+                </div>
+
+                <div data-aos="fade-up" class="card col-xl-4 col-md-6 col-sm-12 contenedorProducto">
+                    <img src="../img/art-17.png" class="card-img-top img-fluid imgProduc" alt="Art.17- conjunto sexy">
+                    <div class="card-body">
+                        <h3 class="card-title nombreProduc">Conjunto sexy</h3>
+                        <p class="card-text">De encaje con tanga regulable + arnes completo
+                            elastizable.</p>
+                        <h4 class="card-precio">$9000 </h4>
+                        <h5>Stock: 5</h5>
+                        <button type="button" class="animate__animated animate__bounce btnModal" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            Añadir
+                        </button>
+                    </div>
+                </div>
+
+                <div data-aos="fade-up" class="card col-xl-4 col-md-6 col-sm-12 contenedorProducto">
+                    <img src="../img/art-18.png" class="card-img-top img-fluid imgProduc"
+                        alt="Art.18- conjunto armado 2">
+                    <div class="card-body">
+                        <h3 class="card-title nombreProduc">Conjunto up</h3>
+                        <p class="card-text">Con push up y arco de encaje y tanga regulable.</p>
+                        <h4 class="card-precio">$8000 </h4>
+                        <h5>Stock: 15</h5>
+                        <button type="button" class="animate__animated animate__bounce btnModal" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            Añadir
+                        </button>
+                    </div>
+                </div> -->
+
             </div>
 
-            <div data-aos="fade-up" class="card col-xl-4 col-md-6 col-sm-12 contenedorProducto">
-                <img src="../img/art-12.png" class="card-img-top img-fluid imgProduc" alt="Art.12- conjunto bralette">
-                <div class="card-body">
-                    <h3 class="card-title nombreProduc">Conjunto Bra</h3>
-                    <p class="card-text">De encaje, con corpiño y tanga regulable.</p>
-                    <h4 class="card-precio">$8000 </h4>
-                    <h5>Stock: 10</h5>
-                    <button type="button" class="animate__animated animate__bounce btnModal" data-bs-toggle="modal"
-                        data-bs-target="#exampleModal">
-                        Añadir
-                    </button>
-                </div>
-            </div>
+            <!-- paginacion -->
 
-            <div data-aos="fade-up" class="card col-xl-4 col-md-6 col-sm-12 contenedorProducto">
-                <img src="../img/art-13.png" class="card-img-top img-fluid imgProduc" alt="Art.13- Conjunto armado">
-                <div class="card-body">
-                    <h3 class="card-title nombreProduc">Conjunto Push</h3>
-                    <p class="card-text">De push up y arco con tanga.</p>
-                    <h4 class="card-precio">$7500 </h4>
-                    <h5>Stock: 5</h5>
-                    <button type="button" class="animate__animated animate__bounce btnModal" data-bs-toggle="modal"
-                        data-bs-target="#exampleModal">
-                        Añadir
-                    </button>
-                </div>
-            </div>
+            <nav aria-label="Page navigation example">
+                <ul class="pagination justify-content-end">
+                    <li class="page-item disabled">
 
-            <div data-aos="fade-up" class="card col-xl-4 col-md-6 col-sm-12 contenedorProducto">
-                <img src="../img/art-14.png" class="card-img-top img-fluid imgProduc"
-                    alt="Art.14-conjunto bralette y tul">
-                <div class="card-body">
-                    <h3 class="card-title nombreProduc">Conjunto tul</h3>
-                    <p class="card-text">Sin relleno con corpiño y tanga regulables.</p>
-                    <h4 class="card-precio">$7000 </h4>
-                    <h5>Stock: 15</h5>
-                    <button type="button" class="animate__animated animate__bounce btnModal" data-bs-toggle="modal"
-                        data-bs-target="#exampleModal">
-                        Añadir
-                    </button>
-                </div>
-            </div>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#">Next</a>
+                    </li>
+                </ul>
+            </nav>
 
-            <div data-aos="fade-up" class="card col-xl-4 col-md-6 col-sm-12 contenedorProducto">
-                <img src="../img/art-15.png" class="card-img-top img-fluid imgProduc"
-                    alt="Art.15- conjunto deportivo 2">
-                <div class="card-body">
-                    <h3 class="card-title nombreProduc">Conjunto depo</h3>
-                    <p class="card-text">De microfibra,sin relleno con colales alta.</p>
-                    <h4 class="card-precio">$7500 </h4>
-                    <h5>Stock: 5</h5>
-                    <button type="button" class="animate__animated animate__bounce btnModal" data-bs-toggle="modal"
-                        data-bs-target="#exampleModal">
-                        Añadir
-                    </button>
-                </div>
-            </div>
+            <!-- MODAL -->
 
-            <div data-aos="fade-up" class="card col-xl-4 col-md-6 col-sm-12 contenedorProducto">
-                <img src="../img/art-16.png" class="card-img-top img-fluid imgProduc" alt="Art.16-conjunto clasico">
-                <div class="card-body">
-                    <h3 class="card-title nombreProduc">Conjunto basico</h3>
-                    <p class="card-text">De encaje con corpiño y tanga regulable.</p>
-                    <h4 class="card-precio">$7000 </h4>
-                    <h5>Stock: 10</h5>
-                    <button type="button" class="animate__animated animate__bounce btnModal" data-bs-toggle="modal"
-                        data-bs-target="#exampleModal">
-                        Añadir
-                    </button>
-                </div>
-            </div>
+            <button type="button" class="btnModal" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Añadir
+            </button>
 
-            <div data-aos="fade-up" class="card col-xl-4 col-md-6 col-sm-12 contenedorProducto">
-                <img src="../img/art-17.png" class="card-img-top img-fluid imgProduc" alt="Art.17- conjunto sexy">
-                <div class="card-body">
-                    <h3 class="card-title nombreProduc">Conjunto sexy</h3>
-                    <p class="card-text">De encaje con tanga regulable + arnes completo
-                        elastizable.</p>
-                    <h4 class="card-precio">$9000 </h4>
-                    <h5>Stock: 5</h5>
-                    <button type="button" class="animate__animated animate__bounce btnModal" data-bs-toggle="modal"
-                        data-bs-target="#exampleModal">
-                        Añadir
-                    </button>
-                </div>
-            </div>
+            <!-- logo whatsapp -->
 
-            <div data-aos="fade-up" class="card col-xl-4 col-md-6 col-sm-12 contenedorProducto">
-                <img src="../img/art-18.png" class="card-img-top img-fluid imgProduc" alt="Art.18- conjunto armado 2">
-                <div class="card-body">
-                    <h3 class="card-title nombreProduc">Conjunto up</h3>
-                    <p class="card-text">Con push up y arco de encaje y tanga regulable.</p>
-                    <h4 class="card-precio">$8000 </h4>
-                    <h5>Stock: 15</h5>
-                    <button type="button" class="animate__animated animate__bounce btnModal" data-bs-toggle="modal"
-                        data-bs-target="#exampleModal">
-                        Añadir
-                    </button>
-                </div>
-            </div>
-
+            <a href="https://api.whatsapp.com/send?phone=2615953001&text=Hola!,%20quisiera%20hacerte%20una%20consulta"
+                target="_blank">
+                <img class="logoWhats img-fluid" src="../img/logo-whatsapp.png" alt="logo verde whatsapp">
+            </a>
         </div>
-
-        <!-- paginacion -->
-
-        <nav aria-label="Page navigation example">
-            <ul class="pagination justify-content-end">
-                <li class="page-item disabled">
-
-                </li>
-                <li class="page-item"><a class="page-link" href="#">1</a></li>
-                <li class="page-item"><a class="page-link" href="#">2</a></li>
-                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                <li class="page-item">
-                    <a class="page-link" href="#">Next</a>
-                </li>
-            </ul>
-        </nav>
-
-        <!-- MODAL -->
-
-        <button type="button" class="btnModal" data-bs-toggle="modal" data-bs-target="#exampleModal">
-            Añadir
-        </button>
-
-        <!-- logo whatsapp -->
-
-        <a href="https://api.whatsapp.com/send?phone=2615953001&text=Hola!,%20quisiera%20hacerte%20una%20consulta"
-            target="_blank">
-            <img class="logoWhats img-fluid" src="../img/logo-whatsapp.png" alt="logo verde whatsapp">
-        </a>
 
     </main>
 
@@ -381,6 +387,8 @@
 
 
     </footer>
+    <script src="/js/index.js"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
@@ -389,6 +397,8 @@
     <script>
         AOS.init();
     </script>
+
+
 
 </body>
 
